@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="bg-gradient-to-r from-purple-500 to-blue-500 text-white p-5">
+        <h1 class="text-3xl font-bold animate-bounce">Sabri Paulino</h1>
+        <nav class="mt-2">
+            <a href="#about" class="mr-5 hover:text-yellow-300">About</a>
+            <a href="#projects" class="mr-5 hover:text-yellow-300">Projects</a>
+            <a href="#contact" class="hover:text-yellow-300">Contact</a>
+        </nav>
+    </header>
+
+    <main class="p-10 bg-main-pattern">
+        <section id="about" class="mb-10">
+            <h2 class="text-2xl font-semibold mb-5 text-purple-600 animate-fade-in">About Me</h2>
+            
+            <img src="sabri.jpg" alt="My Profile Picture" class="w-40 h-40 rounded-full mb-5">
+            <p class="text-gray-700">I am a software engineer with one year of experience in Java development. I am passionate about building efficient and scalable applications.</p>
+        </section>
+
+        <section id="projects" class="mb-10">
+            <h2 class="text-2xl font-semibold mb-5 text-blue-600 animate-fade-in">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="bg-white p-5 shadow-md rounded animate-slide-in">
+                    <h3 class="font-bold text-lg text-pink-500">Project 1: Task Manager</h3>
+                    <p>A Java-based application that allows users to create, update, and delete tasks. Features include user authentication and task categorization.</p>
+                    <p class="text-gray-500">Technologies: Java, Spring Boot, MySQL</p>
+                </div>
+                <div class="bg-white p-5 shadow-md rounded animate-slide-in">
+                    <h3 class="font-bold text-lg text-pink-500">Project 2: Weather App</h3>
+                    <p>A web application that fetches real-time weather data using a Java backend. Users can search for weather by city and view forecasts.</p>
+                    <p class="text-gray-500">Technologies: Java, REST API, HTML, CSS</p>
+                </div>
+                <div class="bg-white p-5 shadow-md rounded animate-slide-in">
+                    <h3 class="font-bold text-lg text-pink-500">Project 3: E-commerce Site</h3>
+                    <p>An online store developed with a Java backend and JavaScript frontend, allowing users to browse products, add them to a cart, and make purchases.</p>
+                    <p class="text-gray-500">Technologies: Java, Spring, React, MongoDB</p>
+                </div>
+                <div class="bg-white p-5 shadow-md rounded animate-slide-in">
+                    <h3 class="font-bold text-lg text-pink-500">Project 4: Portfolio Website</h3>
+                    <p>This portfolio website showcases my skills and projects. Built with HTML, Tailwind CSS, and JavaScript to demonstrate my front-end abilities.</p>
+                    <p class="text-gray-500">Technologies: HTML, Tailwind CSS, JavaScript</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-10">
+            <h2 class="text-2xl font-semibold mb-5 text-green-600 animate-fade-in">Contact Me</h2>
+            <form id="contact-form" class="bg-white p-5 shadow-md rounded animate-slide-up">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" class="border border-gray-300 p-2 w-full rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" class="border border-gray-300 p-2 w-full rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" class="border border-gray-300 p-2 w-full rounded" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition-transform transform hover:scale-105">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-blue-500 to-purple-500 text-white text-center p-5">
+        <p>&copy; 2024 My Portfolio</p>
+        <p>Follow me on:</p>
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="https://github.com/yourusername" target="_blank" class="hover:text-yellow-300">GitHub</a>
+            <a href="https://www.linkedin.com/in/yourusername/" target="_blank" class="hover:text-yellow-300">LinkedIn</a>
+            <a href="https://twitter.com/yourusername" target="_blank" class="hover:text-yellow-300">Twitter</a>
+        </div>
+    </footer>
+</body>
+
+</html>

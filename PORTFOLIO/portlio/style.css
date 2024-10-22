@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #79c1f1;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-main-pattern {
+    background: url('sabri.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 2s ease-in-out;
+}
+
+.animate-slide-in {
+    animation: slide-in 1.5s ease-in-out;
+}
+
+.animate-slide-up {
+    animation: slide-up 1.5s ease-in-out;
+}
+
+header {
+    background-color: rgba(106, 90, 205, 0.8);
+    color: white;
+}
+
+footer {
+    background-color: rgba(72, 61, 139, 0.8);
+    color: white;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+#contact-form input,
+#contact-form textarea {
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #4a5568;
+    box-shadow: 0 0 0 2px rgba(74, 85, 104, 0.5);
+}
+
+button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+#about img {
+    float: right;
+    margin-left: 20px;
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about::after {
+    content: "";
+    display: table;
+    clear: both;
+}
